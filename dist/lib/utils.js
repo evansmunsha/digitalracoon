@@ -11,7 +11,7 @@ var __assign = (this && this.__assign) || function () {
     return __assign.apply(this, arguments);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.validateString = exports.constructMetadata = exports.formatPrice = exports.cn = void 0;
+exports.constructMetadata = exports.formatPrice = exports.cn = void 0;
 var clsx_1 = require("clsx");
 var tailwind_merge_1 = require("tailwind-merge");
 function cn() {
@@ -35,7 +35,7 @@ function formatPrice(price, options) {
 }
 exports.formatPrice = formatPrice;
 function constructMetadata(_a) {
-    var _b = _a === void 0 ? {} : _a, _c = _b.title, title = _c === void 0 ? 'DigitalRacoon - the marketplace for digital assets' : _c, _d = _b.description, description = _d === void 0 ? 'DigitalRacoon is an open-source marketplace for high-quality digital goods.' : _d, _e = _b.image, image = _e === void 0 ? '/thumbnail.png' : _e, _f = _b.icons, icons = _f === void 0 ? '/favicon1.png' : _f, _g = _b.noIndex, noIndex = _g === void 0 ? false : _g;
+    var _b = _a === void 0 ? {} : _a, _c = _b.title, title = _c === void 0 ? 'Digital Racoon - the marketplace for digital assets' : _c, _d = _b.description, description = _d === void 0 ? 'Digital Racoon is an open-source marketplace for high-quality digital goods.' : _d, _e = _b.image, image = _e === void 0 ? '/thumbnail.png' : _e, _f = _b.icons, icons = _f === void 0 ? '/favicon1.png' : _f, _g = _b.noIndex, noIndex = _g === void 0 ? false : _g;
     return __assign({ title: title, description: description, openGraph: {
             title: title,
             description: description,
@@ -50,7 +50,7 @@ function constructMetadata(_a) {
             description: description,
             images: [image],
             creator: '@evansensteen',
-        }, icons: icons, metadataBase: new URL('https://digitalracoon.up.railway.app') }, (noIndex && {
+        }, icons: icons, metadataBase: new URL('https://digitalracoon-production.up.railway.app') }, (noIndex && {
         robots: {
             index: false,
             follow: false,
@@ -58,10 +58,3 @@ function constructMetadata(_a) {
     }));
 }
 exports.constructMetadata = constructMetadata;
-var validateString = function (value, maxLength) {
-    if (!value || typeof value !== "string" || value.length > maxLength) {
-        return false;
-    }
-    return true;
-};
-exports.validateString = validateString;

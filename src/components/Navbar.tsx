@@ -5,7 +5,6 @@ import NavItems from './NavItems'
 import { buttonVariants } from './ui/button'
 import UserAccountNav from './UserAccountNav'
 import Cart from './Cart'
-import Image from 'next/image'
 import { getServerSideUser } from '@/lib/payload-utils'
 import { cookies } from 'next/headers'
 import MobileNav from './MobileNav'
@@ -27,7 +26,7 @@ const Navbar = async () => {
 
             <div className='ml-4 flex lg:ml-0'>
                 <Link href='/'>
-                <Image
+                <img
                 className=''
                 src='/favicon1.png'
                 width={60}

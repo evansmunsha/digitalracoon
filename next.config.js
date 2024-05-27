@@ -1,17 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
 	images: {
-		remotePatterns: [
-			{
-				protocol: 'https',
-				hostname: "localhost",
-				pathname: "**",
-				port: "3000",
-				protocol: "http",
-			},
-			
-		],
-	},
+        remotePatterns: [
+            {hostname: "digitalracoon-production.up.railway.app", protocol: "https", port: ""}
+        ]
+    }
 };
 
 module.exports = nextConfig

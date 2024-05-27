@@ -1,8 +1,8 @@
 'use client'
 
 import { PRODUCT_CATEGORIES } from '@/config'
-import { Menu, User, X } from 'lucide-react'
-import Image from 'next/image'
+import { Menu, X } from 'lucide-react'
+
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useEffect, useState } from 'react'
@@ -86,8 +86,8 @@ const MobileNav = () => {
                           key={item.name}
                           className='group relative text-sm'>
                           <div className='relative aspect-square overflow-hidden rounded-lg bg-gray-100 group-hover:opacity-75'>
-                            <Image
-                              fill
+                            <img
+                              
                               src={item.imageSrc}
                               alt='product category image'
                               className='object-cover object-center'

@@ -27,8 +27,8 @@ export function formatPrice(
 }
 
 export function constructMetadata({
-  title = 'DigitalRacoon - the marketplace for digital assets',
-  description = 'DigitalRacoon is an open-source marketplace for high-quality digital goods.',
+  title = 'Digital Racoon - the marketplace for digital assets',
+  description = 'Digital Racoon is an open-source marketplace for high-quality digital goods.',
   image = '/thumbnail.png',
   icons = '/favicon1.png',
   noIndex = false,
@@ -59,7 +59,7 @@ export function constructMetadata({
       creator: '@evansensteen',
     },
     icons,
-    metadataBase: new URL('https://digitalracoon.up.railway.app'),
+    metadataBase: new URL('https://digitalracoon-production.up.railway.app'),
     ...(noIndex && {
       robots: {
         index: false,
@@ -67,12 +67,4 @@ export function constructMetadata({
       },
     }),
   }
-}
-
-export const validateString = (value: unknown, maxLength: number) => {
-  if (!value || typeof value !== "string" || value.length > maxLength) {
-    return false;
-  }
-
-  return true;
 }

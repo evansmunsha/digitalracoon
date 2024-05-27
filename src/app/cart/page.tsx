@@ -59,9 +59,8 @@ const Page = () => {
                 <div
                   aria-hidden='true'
                   className='relative mb-4 h-40 w-40 text-muted-foreground'>
-                  <Image
+                  <img
                     src='/hippo-empty-cart.png'
-                    fill
                     loading='eager'
                     alt='empty shopping cart hippo'
                   />
@@ -96,8 +95,7 @@ const Page = () => {
                         <div className='relative h-24 w-24'>
                           {typeof image !== 'string' &&
                           image.url ? (
-                            <Image
-                              fill
+                            <img
                               src={image.url}
                               alt='product image'
                               className='h-full w-full rounded-md object-cover object-center sm:h-48 sm:w-48'

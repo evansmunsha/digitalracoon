@@ -81,10 +81,8 @@ export const ProductFiles: CollectionConfig = {
     staticDir: 'product_files',
     mimeTypes: [
       'image/*',
-      'application/vnd',
-      'application/pdf',
       'excel/*',
-      'application/zip',
+      'application/*',
     ],
   },
   fields: [

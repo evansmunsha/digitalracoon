@@ -95,12 +95,11 @@ export const stripeWebhookHandler = async (
         },
       },
     })
-    // send receipt
-    //const { name, email, message } = req.body
+
     try {
       const data = await resend.emails.send({
         
-        from: 'DigitalRacoon <noreply@evansmunsha.com>',
+        from: 'Digital Racoon <noreply@evansmunsha.com>',
         to: [user.email],
         
         subject:
@@ -120,34 +119,3 @@ export const stripeWebhookHandler = async (
 
   return res.status(200).send()
 }
-
-
-/* import type { NextApiRequest, NextApiResponse } from 'next'
-//import { Resend } from 'resend';
-
-//const resend = new Resend(process.env.RESEND_API_KEY);
-
-export const handler = async (
-  req: NextApiRequest,
-  res: NextApiResponse
-) => {
-  const { name, email, message } = req.body
-  try {
-    const data = await resend.emails.send({
-      from: 'DigitalRacoon <contact@evansmunsha.com>',
-      to: 'evansensteen@gmail.com',
-      subject: 'Hello world',
-      text: `Hello,
-
-    You have a new form entry from: ${name} ${email}.
-
-    ${message}
-    `,
-    });
-
-    return res.json(data);
-  } catch (error) {
-    return res.json({ error });
-  }
-  
-} */

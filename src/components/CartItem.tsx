@@ -3,7 +3,7 @@ import { useCart } from '@/hooks/use-cart'
 import { formatPrice } from '@/lib/utils'
 import { Product } from '@/payload-types'
 import { ImageIcon, X } from 'lucide-react'
-import Image from 'next/image'
+
 
 const CartItem = ({ product }: { product: Product }) => {
   const { image } = product.images[0]
@@ -20,10 +20,10 @@ const CartItem = ({ product }: { product: Product }) => {
         <div className='flex items-center space-x-4'>
           <div className='relative aspect-square h-16 w-16 min-w-fit overflow-hidden rounded'>
             {typeof image !== 'string' && image.url ? (
-              <Image
+              <img
                 src={image.url}
                 alt={product.name}
-                fill
+                
                 className='absolute object-cover'
               />
             ) : (
@@ -62,7 +62,6 @@ const CartItem = ({ product }: { product: Product }) => {
           </span>
         </div>
       </div>
-      8:37:26
     </div>
   )
 }

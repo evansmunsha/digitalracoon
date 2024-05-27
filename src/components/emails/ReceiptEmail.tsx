@@ -20,7 +20,7 @@ import {
 import * as React from 'react'
 
 import { format } from 'date-fns'
-import Image from 'next/image'
+
 
 interface ReceiptEmailProps {
   email: string
@@ -48,7 +48,7 @@ export const ReceiptEmail = ({
           <Section>
             <Column>
               <Img
-                src={`${process.env.NEXT_PUBLIC_SERVER_URL}/hippo-email-sent.png`}
+                src={`${process.env.NEXT_PUBLIC_SERVER_URL}/holding an email.png`}
                 width='100'
                 height='100'
                 alt='DigitalRacoon'
@@ -183,11 +183,7 @@ export const ReceiptEmail = ({
           </Section>
           <Hr style={productPriceLineBottom} />
 
-          <Text style={footerLinksWrapper}>
-            <Link href='#'>Account Settings</Link> •{' '}
-            <Link href='/terms'>Terms of Sale</Link> •{' '}
-            <Link href='/privacy-policy'>Privacy Policy </Link>
-          </Text>
+
           <Text style={footerCopyright}>
             Copyright © 2024 DigitalRacoon Inc. <br />{' '}
             <Link href='#'>All rights reserved</Link>

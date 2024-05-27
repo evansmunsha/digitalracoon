@@ -44,10 +44,10 @@ var EmailTemplate = function (_a) {
         React.createElement(components_1.Preview, null, "The marketplace for high-quality digital goods."),
         React.createElement(components_1.Body, { style: main },
             React.createElement(components_1.Container, { style: container },
-                React.createElement(components_1.Img, { src: "".concat(process.env.NEXT_PUBLIC_SERVER_URL, "/hippo-email-sent.png"), width: '150', height: '150', alt: 'DigitalRacoon', style: logo }),
+                React.createElement(components_1.Img, { src: "".concat(process.env.NEXT_PUBLIC_SERVER_URL, "/holding an email.png"), width: '100', height: '100', alt: 'DigitalRacoon' }),
                 React.createElement(components_1.Text, { style: paragraph }, "Hi there,"),
                 React.createElement(components_1.Text, { style: paragraph },
-                    "Welcome to DigitalRacoon, the marketplace for high quality digital goods. Use the button below to ",
+                    "Welcome to Digital Racoon, the marketplace for high quality digital goods. Use the button below to ",
                     actionLabel,
                     "."),
                 React.createElement(components_1.Section, { style: btnContainer },
@@ -55,7 +55,7 @@ var EmailTemplate = function (_a) {
                 React.createElement(components_1.Text, { style: paragraph },
                     "Best,",
                     React.createElement("br", null),
-                    "The DigitalRacoon team"),
+                    "The Digital Racoon team"),
                 React.createElement(components_1.Hr, { style: hr }),
                 React.createElement(components_1.Text, { style: footer }, "If you did not request this email, you can safely ignore it.")))));
 };

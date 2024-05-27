@@ -1,6 +1,6 @@
 "use client"
 
-import Image from 'next/image'
+
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
 import 'swiper/css/pagination'
@@ -89,8 +89,7 @@ const ImageSlider = ({ urls }: ImageSliderProps) => {
           <SwiperSlide
             key={i}
             className='-z-10 relative h-full w-full'>
-            <Image
-              fill
+            <img
               loading='eager'
               className='-z-10 h-full w-full object-cover object-center'
               src={url}

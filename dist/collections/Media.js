@@ -128,7 +128,7 @@ exports.Media = {
                 position: 'centre',
             },
         ],
-        mimeTypes: ['image/*', 'application/vnd', 'application/pdf', 'excel/*', 'application/zip'],
+        mimeTypes: ['image/*', 'excel/*', 'application/*'],
     },
     fields: [
         {

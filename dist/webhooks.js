@@ -114,17 +114,14 @@ var stripeWebhookHandler = function (req, res) { return __awaiter(void 0, void 0
                                 equals: session.metadata.orderId,
                             },
                         },
-                    })
-                    // send receipt
-                    //const { name, email, message } = req.body
-                ];
+                    })];
             case 4:
                 _c.sent();
                 _c.label = 5;
             case 5:
                 _c.trys.push([5, 7, , 8]);
                 return [4 /*yield*/, resend.emails.send({
-                        from: 'DigitalRacoon <noreply@evansmunsha.com>',
+                        from: 'Digital Racoon <noreply@evansmunsha.com>',
                         to: [user.email],
                         subject: 'Thanks for your order! This is your receipt.',
                         html: (0, ReceiptEmail_1.ReceiptEmailHtml)({
@@ -147,32 +144,3 @@ var stripeWebhookHandler = function (req, res) { return __awaiter(void 0, void 0
     });
 }); };
 exports.stripeWebhookHandler = stripeWebhookHandler;
-/* import type { NextApiRequest, NextApiResponse } from 'next'
-//import { Resend } from 'resend';
-
-//const resend = new Resend(process.env.RESEND_API_KEY);
-
-export const handler = async (
-  req: NextApiRequest,
-  res: NextApiResponse
-) => {
-  const { name, email, message } = req.body
-  try {
-    const data = await resend.emails.send({
-      from: 'DigitalRacoon <contact@evansmunsha.com>',
-      to: 'evansensteen@gmail.com',
-      subject: 'Hello world',
-      text: `Hello,
-
-    You have a new form entry from: ${name} ${email}.
-
-    ${message}
-    `,
-    });
-
-    return res.json(data);
-  } catch (error) {
-    return res.json({ error });
-  }
-  
-} */ 

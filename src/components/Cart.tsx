@@ -6,7 +6,6 @@ import { Separator } from "./ui/separator"
 import { formatPrice } from "@/lib/utils"
 import Link from "next/link"
 import { buttonVariants } from "./ui/button"
-import Image from 'next/image'
 import { useCart } from "@/hooks/use-cart"
 import { useEffect, useState } from "react"
 import { ScrollArea } from "./ui/scroll-area"
@@ -97,9 +96,8 @@ const Cart = () => {
             <div
               aria-hidden='true'
               className='relative mb-4 h-60 w-60 text-muted-foreground'>
-              <Image
+              <img
                 src='/hippo-empty-cart.png'
-                fill
                 alt='empty shopping cart hippo'
               />
             </div>

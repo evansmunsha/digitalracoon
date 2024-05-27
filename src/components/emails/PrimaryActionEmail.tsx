@@ -11,7 +11,6 @@ import {
   Text,
   render,
 } from '@react-email/components'
-import Image from 'next/image'
 
 import * as React from "react"
 
@@ -35,16 +34,15 @@ export const EmailTemplate = ({
       <Body style={main}>
         <Container style={container}>
           <Img
-            src={`${process.env.NEXT_PUBLIC_SERVER_URL}/hippo-email-sent.png`}
-            width='150'
-            height='150'
+            src={`${process.env.NEXT_PUBLIC_SERVER_URL}/holding an email.png`}
+            width='100'
+            height='100'
             alt='DigitalRacoon'
-            style={logo}
           />
           
           <Text style={paragraph}>Hi there,</Text>
           <Text style={paragraph}>
-            Welcome to DigitalRacoon, the marketplace for
+            Welcome to Digital Racoon, the marketplace for
             high quality digital goods. Use the button below
             to {actionLabel}.
           </Text>
@@ -56,7 +54,7 @@ export const EmailTemplate = ({
           <Text style={paragraph}>
             Best,
             <br />
-            The DigitalRacoon team
+            The Digital Racoon team
           </Text>
           <Hr style={hr} />
           <Text style={footer}>
